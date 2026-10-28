@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WORLD ZERO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <div class="brand-mark">WZ<span> / 01</span></div>
+    <div class="top-status"><i class="dot"></i> SYSTÈME OPÉRATIONNEL <span class="separator">/</span> JAVA 1.21.1</div>
+    <button id="settings-open" class="icon-button" aria-label="Ouvrir les paramètres">⚙</button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <div class="eyebrow">DOSSIER DE SURVIE · 001</div>
+        <h1>WORLD<br><span>ZERO</span></h1>
+        <p class="tagline">LE MONDE EST TOMBÉ.<br>CE QUE TU RECONSTRUIS RESTE.</p>
+        <div class="hero-rule"><span></span></div>
+        <p class="description">Explore les ruines. Réactive les anciennes technologies.<br>Écris la prochaine page de la civilisation.</p>
+      </div>
+      <div class="coordinates">SECTEUR 07<br>COORD. 48°N / 001°W</div>
+    </section>
+    <section class="control-panel">
+      <div class="left-panel">
+        <div class="section-label">IDENTITÉ DU SURVIVANT</div>
+        <div class="account-row">
+          <div class="avatar" id="avatar">?</div>
+          <div class="account-info"><strong id="account-name">NON CONNECTÉ</strong><span id="account-status">Authentification Microsoft requise</span></div>
+          <button id="login" class="secondary-button">SE CONNECTER ↗</button>
+        </div>
+        <div class="divider"></div>
+        <div class="section-label">ÉTAT DE L’INSTALLATION</div>
+        <div class="install-row"><span><i class="mini-dot"></i> Minecraft Java</span><b id="minecraft-state">1.21.1</b></div>
+        <div class="install-row"><span><i class="mini-dot"></i> NeoForge</span><b id="loader-state">À INSTALLER</b></div>
+        <div class="install-row"><span><i class="mini-dot"></i> Modpack</span><b id="pack-state">EN ATTENTE</b></div>
+        <div class="progress-wrap"><div class="progress-label"><span id="progress-label">EN ATTENTE DES INSTRUCTIONS</span><span id="progress-value">0%</span></div><div class="progress-track"><div id="progress-bar"></div></div></div>
+      </div>
+      <div class="right-panel">
+        <div class="section-label">MISSION SUIVANTE</div>
+        <div class="mission-card">
+          <div class="mission-number">01</div>
+          <div><h2>RETOUR À LA SURFACE</h2><p>Synchronise les fichiers, vérifie l’installation et rejoins le monde.</p></div>
+        </div>
+        <button id="play" class="play-button" disabled><span class="play-symbol">▶</span><span><b>JOUER</b><small id="play-caption">CONNEXION REQUISE</small></span><span class="button-arrow">↗</span></button>
+        <div class="secondary-actions"><button id="install">INSTALLER / RÉPARER</button><button id="update">METTRE À JOUR LE PACK</button></div>
+        <div class="server-line"><span>SERVEUR</span><b id="server-address">À CONFIGURER</b><button id="copy-server" title="Copier l'adresse">⧉</button></div>
+      </div>
+    </section>
+    <section class="bottom-bar">
+      <span>WORLD ZERO <b>BUILD 0.1.0</b></span><span id="instance-path">INSTANCE LOCALE</span><button id="open-folder">OUVRIR LE DOSSIER ↗</button>
+    </section>
+    <section class="log-panel">
+      <div class="log-heading"><span>JOURNAL DU SYSTÈME</span><button id="clear-log">EFFACER</button></div>
+      <div id="log" class="log" aria-live="polite"><div class="log-entry muted">[SYSTEM] En attente de l’initialisation…</div></div>
+    </section>
+  </main>
+  <div id="settings-modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-heading"><div><span class="eyebrow">CONFIGURATION</span><h2>PARAMÈTRES DU LAUNCHER</h2></div><button id="settings-close" class="icon-button">✕</button></div>
+      <label>URL HTTPS du manifeste du modpack<input id="manifest-url" type="url" placeholder="https://ton-site.fr/world-zero/manifest.json"></label>
+      <p class="help">Le manifeste doit être un JSON hébergé en HTTPS. Chaque fichier doit avoir une URL HTTPS et un SHA-256 réel.</p>
+      <label>Adresse du serveur Minecraft<input id="server-input" type="text" placeholder="exemple.fr:25565"></label>
+      <div class="two-inputs"><label>RAM minimale<select id="memory-min"><option>1G</option><option selected>2G</option><option>3G</option><option>4G</option></select></label><label>RAM maximale<select id="memory-max"><option>2G</option><option selected>4G</option><option>5G</option><option>6G</option><option>8G</option></select></label></div>
+      <div class="modal-actions"><button id="logout" class="secondary-button">DÉCONNECTER</button><button id="settings-save" class="play-button compact">ENREGISTRER</button></div>
+      <p class="help">La session Microsoft n’est pas enregistrée sur disque par ce prototype. Les identifiants ne sont jamais demandés dans cette interface.</p>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

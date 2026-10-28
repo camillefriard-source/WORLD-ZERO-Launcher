@@ -1,0 +1,10 @@
+{
+  "minecraftVersion": "1.21.1",
+  "neoforgeBranch": "21.1",
+  "memoryMin": "2G",
+  "memoryMax": "4G",
+  "serverAddress": "À CONFIGURER",
+  "modpackManifestUrl": "",
+  "modpackName": "WORLD ZERO",
+  "allowUnverifiedManifest": false
+}

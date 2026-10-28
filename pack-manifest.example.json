@@ -1,0 +1,15 @@
+{
+  "name": "WORLD ZERO",
+  "version": "0.1.0",
+  "minecraft": "1.21.1",
+  "loader": "NeoForge",
+  "files": [
+    {
+      "path": "mods/EXEMPLE_MOD.jar",
+      "url": "https://example.org/EXEMPLE_MOD.jar",
+      "sha256": "REMPLACER_PAR_LE_SHA256_REEL",
+      "side": "client",
+      "required": false
+    }
+  ]
+}

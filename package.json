@@ -1,0 +1,69 @@
+{
+  "name": "world-zero-launcher",
+  "version": "1.0.0",
+  "description": "Launcher Electron pour le modpack Minecraft WORLD ZERO",
+  "main": "src/main.js",
+  "author": "WORLD ZERO",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "minecraft-launcher-core": "3.18.2",
+    "msmc": "5.0.5",
+    "electron-updater": "^6.6.2"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "fr.worldzero.launcher",
+    "productName": "WORLD ZERO Launcher",
+    "artifactName": "WORLD_ZERO_Launcher_Setup_${version}.${ext}",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "config.json",
+      "pack-manifest.example.json",
+      "package.json",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/world-zero.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "WORLD ZERO Launcher",
+      "installerIcon": "assets/world-zero.ico",
+      "uninstallerIcon": "assets/world-zero.ico",
+      "installerHeaderIcon": "assets/world-zero.ico",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "camillefriard-source",
+        "repo": "WORLD-ZERO-Launcher",
+        "releaseType": "release"
+      }
+    ]
+  }
+}
