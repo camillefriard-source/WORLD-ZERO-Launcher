@@ -1,60 +1,61 @@
-﻿{
-    "minecraft":  "1.21.1",
-    "loader":  {
-                   "version":  "21.1.265",
-                   "name":  "neoforge"
-               },
-    "files":  [
-                  {
-                      "path":  "mods/oritech-neoforge-1.21.1-1.2.13.jar",
-                      "url":  "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/tag/world-zero-pack-v0.1.0/oritech-neoforge-1.21.1-1.2.13.jar",
-                      "sha256":  "32600bf5b08fcf6d4a49e557f90ee45b238098170777872c8919d9fdb0a1b828",
-                      "side":  "client",
-                      "required":  true
-                  },
-                  {
-                      "path":  "mods/athena-neoforge-1.21.1-4.0.6.jar",
-                      "url":  "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/tag/world-zero-pack-v0.1.0/athena-neoforge-1.21.1-4.0.6.jar",
-                      "sha256":  "43699885bbce3343916d4c5c4940cf0e3f9f6f02fdeb46e8655e121b42282ec5",
-                      "side":  "client",
-                      "required":  true
-                  },
-                  {
-                      "path":  "mods/geckolib-neoforge-1.21.1-4.9.3.jar",
-                      "url":  "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/tag/world-zero-pack-v0.1.0/geckolib-neoforge-1.21.1-4.9.3.jar",
-                      "sha256":  "20a1995e4074f387ff549e2c57ea79dd7d41ee83c6afb9dd6a6e840e592d1c47",
-                      "side":  "client",
-                      "required":  true
-                  },
-                  {
-                      "path":  "mods/architectury-13.0.11-neoforge.jar",
-                      "url":  "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/tag/world-zero-pack-v0.1.0/architectury-13.0.11-neoforge.jar",
-                      "sha256":  "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb",
-                      "side":  "client",
-                      "required":  true
-                  },
-                  {
-                      "path":  "mods/emi-1.1.24+1.21.1+neoforge.jar",
-                      "url":  "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/tag/world-zero-pack-v0.1.0/emi-1.1.24+1.21.1+neoforge.jar",
-                      "sha256":  "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
-                      "side":  "client",
-                      "required":  true
-                  },
-                  {
-                      "path":  "mods/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
-                      "url":  "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/tag/world-zero-pack-v0.1.0/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
-                      "sha256":  "45942985a4a4aebf265b8e22a0c54a96208637471f36f2532ff5d4911322debc",
-                      "side":  "client",
-                      "required":  true
-                  },
-                  {
-                      "path":  "mods/create-1.21.1-6.0.10.jar",
-                      "url":  "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/tag/world-zero-pack-v0.1.0/create-1.21.1-6.0.10.jar",
-                      "sha256":  "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
-                      "side":  "client",
-                      "required":  true
-                  }
-              ],
-    "name":  "WORLD ZERO",
-    "version":  "1.0.0"
+
+{
+  "name": "WORLD ZERO",
+  "version": "1.0.0",
+  "minecraft": "1.21.1",
+  "loader": {
+    "name": "neoforge",
+    "version": "21.1.265"
+  },
+  "files": [
+    {
+      "path": "mods/oritech-neoforge-1.21.1-1.2.13.jar",
+      "url": "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/download/world-zero-pack-v0.1.0/oritech-neoforge-1.21.1-1.2.13.jar",
+      "sha256": "32600bf5b08fcf6d4a49e557f90ee45b238098170777872c8919d9fdb0a1b828",
+      "side": "client",
+      "required": true
+    },
+    {
+      "path": "mods/athena-neoforge-1.21.1-4.0.6.jar",
+      "url": "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/download/world-zero-pack-v0.1.0/athena-neoforge-1.21.1-4.0.6.jar",
+      "sha256": "43699885bbce3343916d4c5c4940cf0e3f9f6f02fdeb46e8655e121b42282ec5",
+      "side": "client",
+      "required": true
+    },
+    {
+      "path": "mods/geckolib-neoforge-1.21.1-4.9.3.jar",
+      "url": "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/download/world-zero-pack-v0.1.0/geckolib-neoforge-1.21.1-4.9.3.jar",
+      "sha256": "20a1995e4074f387ff549e2c57ea79dd7d41ee83c6afb9dd6a6e840e592d1c47",
+      "side": "client",
+      "required": true
+    },
+    {
+      "path": "mods/architectury-13.0.11-neoforge.jar",
+      "url": "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/download/world-zero-pack-v0.1.0/architectury-13.0.11-neoforge.jar",
+      "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb",
+      "side": "client",
+      "required": true
+    },
+    {
+      "path": "mods/emi-1.1.24+1.21.1+neoforge.jar",
+      "url": "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/download/world-zero-pack-v0.1.0/emi-1.1.24+1.21.1+neoforge.jar",
+      "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+      "side": "client",
+      "required": true
+    },
+    {
+      "path": "mods/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
+      "url": "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/download/world-zero-pack-v0.1.0/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
+      "sha256": "45942985a4a4aebf265b8e22a0c54a96208637471f36f2532ff5d4911322debc",
+      "side": "client",
+      "required": true
+    },
+    {
+      "path": "mods/create-1.21.1-6.0.10.jar",
+      "url": "https://github.com/camillefriard-source/WORLD-ZERO-Launcher/releases/download/world-zero-pack-v0.1.0/create-1.21.1-6.0.10.jar",
+      "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "side": "client",
+      "required": true
+    }
+  ]
 }
